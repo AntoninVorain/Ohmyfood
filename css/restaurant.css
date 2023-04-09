@@ -1,0 +1,253 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* ohmyfood */
+  font-family: "Roboto", sans-serif;
+  color: black;
+  /* width: 375px; */
+}
+
+h1{
+  font-family: "Shrikhand";
+  margin: 0 auto;
+}
+
+header {
+  min-width: 375px;
+  display: flex;
+  padding-left: 15px;
+}
+
+.center {
+  padding-left: 110px;
+  width: 50%;
+}
+
+.title {
+  font-family: Shrikhand;
+  font-size: 2rem;
+}
+
+article img {
+  object-fit: cover;
+  height: 312px;
+  width: 100%;
+}
+
+fa-arrow-left {
+  font-size: 30px;
+}
+
+.menu-grid{
+  /* background-color: yellow; */
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.resto-main{
+  padding: 0 1rem;
+}
+
+.menu__category{
+  /* border: 1px solid red; */
+  background-color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.underline{ 
+  overflow: hidden;
+  /* display: block; */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu-item, .underline{
+  padding-left: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* color: black; */
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  /* align-items: center; */
+}
+
+.menu {
+  background-color: #f6f6f6;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  transform: translateY(-10%);
+}
+
+.entree {
+  margin-top: 50px;
+}
+
+.indent {
+  color: #99e2d0;
+  background-color: #99e2d0;
+  margin-left: 0px;
+  width: 30px;
+  height: 0.175rem;
+}
+
+.carte {
+  /* position: relative; */
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  border-radius: 1rem;
+  /* margin-top: 30px; */
+  margin-bottom: 20px;
+  margin-left: 2rem;
+  margin-right:2rem;
+  padding-bottom: 20px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  overflow: hidden;
+  /* height: 5%; */
+}
+
+.carte:hover .check{
+  margin-right: 0;
+}
+
+.carte:hover i{
+  animation: quarterspin .5s ease-in-out;
+}
+
+.underline {
+  position: absolute;
+  font-size: 16px;
+  /* margin-top: 20px; */
+    left: 0;
+}
+
+.price {
+  /* display: inline-block; */
+  /* position: absolute; */
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
+  /* margin-top: 20px; */
+  font-weight: 900;
+  /* padding-left: 340px; */
+  /* margin; */
+}
+
+.check {
+  /* position: absolute; */
+  /* margin-top: 5px; */
+  background-color: #99e2d0;
+  display: grid;
+  place-items: center;
+  font-size: 1.6rem;
+  height: 4rem;
+  border-radius: 0 1rem 1rem 0;
+  margin-right: -4rem;
+  width: 4rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  transition: margin-right .5s;
+}
+
+fa-regular fa-circle-check {
+  position: absolute;
+  right: 0px;
+  color: #99e2d0;
+  /* background-color: #99e2d0; */
+}
+
+.fa-circle-check{
+  background: white;
+  border-radius: 50%;
+  color: #99e2d0;
+}
+
+@keyframes quarterspin{
+  0%{
+    transform: rotate(-270deg);
+  }
+  100%{
+    transform: rotate(0);
+  }
+}
+
+
+.fa-heart {
+  position: relative;
+  right: -22rem;
+  top: 0rem;
+  font-size: 2rem;
+}
+
+.heart {
+  position: absolute;
+}
+
+.full-heart:hover {
+  opacity: 1;
+}
+
+.full-heart{
+  color: transparent;
+  background-image: linear-gradient(180deg, #A05ADC, #e270db);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+
+.btn {
+  margin: 50px;
+  background-image: linear-gradient(180deg, #e270db, #a05adc);
+  /* background-color: ; */
+  border-radius: 30px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo{
+  font-family: Shrikhand, sans-serif;
+  font-size: 20px;
+}
+
+footer{
+  margin-top: 100px;
+  background-color: #353535;
+  color: white;
+  padding-left: 20px;
+}
+
+ul li{
+  list-style-type: none;
+}
+
+@media (max-width: 1439px) {
+.menu-grid{
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 1439px) {
+  /* .menu{
+    display: flex;
+    flex-wrap: wrap;
+  } */
+
+
+  .fa-heart {
+    right: -90rem;
+    top: 0rem;
+  }
+}
