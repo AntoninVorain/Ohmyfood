@@ -12,7 +12,7 @@ body {
 
 h1{
   font-family: "Shrikhand";
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 header {
@@ -22,8 +22,10 @@ header {
 }
 
 .center {
-  padding-left: 110px;
+  height: 40px;
+  /* padding-left: 110px; */
   width: 50%;
+  margin: 0 auto;
 }
 
 .title {
@@ -48,7 +50,7 @@ article img {
 .menu-grid{
   /* background-color: yellow; */
   display:grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 1rem;
 }
 
@@ -64,7 +66,12 @@ article img {
   white-space: nowrap;
 }
 
-.underline{ 
+strong{
+  /* border: 1px solid red; */
+}
+
+.underline{
+  /* border: 1px solid red;  */
   overflow: hidden;
   /* display: block; */
   text-overflow: ellipsis;
@@ -87,6 +94,7 @@ article img {
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
   transform: translateY(-10%);
+  /* position:absolute; */
 }
 
 h3 {
@@ -117,11 +125,44 @@ h3::after{
   margin-bottom: 20px;
   margin-left: 2rem;
   margin-right:2rem;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   overflow: hidden;
   /* height: 5%; */
+  animation: appear 1s;
 }
+
+.delay-1{
+  animation-delay: 100ms;
+}
+.delay-2{
+  animation-delay: 200ms;
+}
+.delay-3{
+  animation-delay: 300ms;
+}
+.delay-4{
+  animation-delay: 400ms;
+}
+.delay-5{
+  animation-delay: 500ms;
+}
+.delay-6{
+  animation-delay: 600ms;
+}
+.delay-7{
+  animation-delay: 700ms;
+}
+.delay-8{
+  animation-delay: 800ms;
+}
+.delay-9{
+  animation-delay: 900ms;
+}
+.delay-10{
+  animation-delay: 1000ms;
+}
+
 
 .carte:hover .check{
   margin-right: 0;
@@ -132,7 +173,7 @@ h3::after{
 }
 
 .underline {
-  position: absolute;
+  /* position: absolute; */
   font-size: 16px;
   /* margin-top: 20px; */
     left: 0;
@@ -146,7 +187,7 @@ h3::after{
   margin-left: auto;
   /* margin-top: 20px; */
   font-weight: 900;
-  /* padding-left: 340px; */
+  padding-right: 5px;
   /* margin; */
 }
 
@@ -188,16 +229,35 @@ fa-regular fa-circle-check {
   }
 }
 
+@keyframes appear{
+  0%{
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.menu-title{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4%;
+  width:96%;
+  margin: 0 auto;
+}
 
 .fa-heart {
   position: relative;
-  right: -22rem;
-  top: 0rem;
   font-size: 2rem;
 }
 
 .heart {
-  position: absolute;
+  position: relative;
+  width: 32px;
+  height: 32px;
 }
 
 .full-heart:hover {
@@ -205,6 +265,9 @@ fa-regular fa-circle-check {
 }
 
 .full-heart{
+  position: absolute;
+  top: 0;
+  left: 0;
   color: transparent;
   background-image: linear-gradient(180deg, #A05ADC, #e270db);
   background-clip: text;
@@ -213,15 +276,30 @@ fa-regular fa-circle-check {
   transition: all 200ms ease-in-out;
 }
 
-.btn {
+/* .btn {
   margin: 50px;
+  width: 50%;
   background-image: linear-gradient(180deg, #e270db, #a05adc);
-  /* background-color: ; */
   display: grid;
   place-items: center;
   border-radius: 30px;
   text-align: center;
   padding: 20px 0;
+  cursor: pointer;
+} */
+
+.btn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 0;
+  background-image: linear-gradient(180deg, #e270db, #A05ADC);
+  /* background-color: ; */
+  border-radius: 30px;
+  text-align: center;
+  padding: 20px 0;
+  max-width: 300px;
+  width: 600px;
   cursor: pointer;
 }
 
@@ -244,19 +322,52 @@ a {
 }
 
 footer{
-  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
   background-color: #353535;
   color: white;
   padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 10px;
 }
 
 ul li{
   list-style-type: none;
+  padding: 10px;
 }
+
+@media (min-width: 767px) {
+  .menu-grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+@media (min-width: 1200px) {
+  footer{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #353535;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 10px;
+  }
+  
+  .logo{
+    padding-left: 4rem;
+    padding-right: 1rem;
+  }
+
+  ul li{
+    display: inline-block;
+  }
 
 @media (max-width: 1439px) {
 .menu-grid{
-  grid-template-columns: 1fr;
+  /* grid-template-columns: 1fr; */
 }
 
 @media (min-width: 1439px) {
