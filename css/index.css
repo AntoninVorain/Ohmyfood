@@ -81,7 +81,7 @@ header {
   transform: scale(1.02);
   opacity: 0.9;
   transition: transform 300ms ease-in-out;
-  transform: linear-gradient(180deg, #A05ADC, #e270db);
+  /* transform: linear-gradient(180deg, #A05ADC, #e270db); */
 }
 
 a{

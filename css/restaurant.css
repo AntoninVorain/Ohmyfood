@@ -308,7 +308,7 @@ fa-regular fa-circle-check {
   transform: scale(1.02);
   opacity: 0.9;
   transition: transform 300ms ease-in-out;
-  transform: linear-gradient(180deg, #A05ADC, #e270db);
+  /* transform: linear-gradient(180deg, #A05ADC, #e270db); */
 }
 
 a {
@@ -364,21 +364,21 @@ ul li{
   ul li{
     display: inline-block;
   }
-
-@media (max-width: 1439px) {
-.menu-grid{
-  /* grid-template-columns: 1fr; */
 }
+/*@media (max-width: 1439px) {
+.menu-grid{
+  /* grid-template-columns: 1fr; 
+}*/
 
-@media (min-width: 1439px) {
+/* @media (min-width: 1439px) {
   /* .menu{
     display: flex;
     flex-wrap: wrap;
-  } */
+  } 
 
 
   .fa-heart {
     right: -90rem;
     top: 0rem;
   }
-}
+} */
