@@ -31,6 +31,7 @@ header {
 .title {
   font-family: Shrikhand;
   font-size: 2rem;
+  padding: 1rem;
 }
 
 article img {

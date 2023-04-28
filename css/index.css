@@ -44,6 +44,7 @@ body {
 
 header {
   min-width: 100%;
+  margin: 0;
 }
 
 .fa-location-dot{
@@ -59,7 +60,7 @@ header {
   display: flex;
   justify-content: center;
   padding: 10px 0;
-  /* margin: 10px; */
+  margin: 0px;
 }
 
 .btn {
@@ -87,8 +88,14 @@ a{
   color: white;
 }
 
+.bgc{
+  height: 200px;
+  background-color: #F6F6F6;
+  padding-top: 50px;
+}
+
 .reserve{
-  margin-top: 50px;
+  font-size: 2rem;;
   text-align: center;
 }
 
@@ -106,7 +113,9 @@ p{
 
 .ftn{
   margin-top: 100px;
+  /* margin-right: 45px; */
   padding-left: 10px;
+  /* padding-right: 10px; */
 }
 
 
@@ -121,6 +130,7 @@ p{
   display: flex;
   flex-direction: column;
   padding-left: 10px;
+  padding-right: 25px;
 }
 
 .bullet{
@@ -173,6 +183,7 @@ restaurant::before{
 
 .resto{
   margin-left: 0px;
+  padding-left: 10px;
   padding-top: 50px;
 }
 
@@ -180,7 +191,8 @@ restaurant::before{
   border-radius: 15px;
   max-width: 94%;
   max-height: 340px;
-  margin: auto;
+  margin: 25px 0;
+  /* margin: auto; */
   position: relative;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   background-color: white;
@@ -197,7 +209,7 @@ restaurant::before{
 .new{
   display: inline-block;
   position: absolute;
-  padding :0.5em;
+  padding :0.5em 1em;
   top: 2%;
   right:2%;
   /* margin:  290px; */
@@ -208,6 +220,7 @@ restaurant::before{
 .subtitle{
   position:relative;
   width: 300px;
+  left: 15px;
 }
 .subtitle a{
   color: black;
