@@ -43,9 +43,7 @@ body {
 }
 
 header {
-  min-width: 375px;
-  /* background-color: red; */
-  /* position: relative; */
+  min-width: 100%;
 }
 
 .fa-location-dot{
@@ -199,6 +197,7 @@ restaurant::before{
 .new{
   display: inline-block;
   position: absolute;
+  padding :0.5em;
   top: 2%;
   right:2%;
   /* margin:  290px; */

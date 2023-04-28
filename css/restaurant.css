@@ -276,18 +276,6 @@ fa-regular fa-circle-check {
   transition: all 200ms ease-in-out;
 }
 
-/* .btn {
-  margin: 50px;
-  width: 50%;
-  background-image: linear-gradient(180deg, #e270db, #a05adc);
-  display: grid;
-  place-items: center;
-  border-radius: 30px;
-  text-align: center;
-  padding: 20px 0;
-  cursor: pointer;
-} */
-
 .btn {
   margin-left: auto;
   margin-right: auto;
@@ -308,7 +296,6 @@ fa-regular fa-circle-check {
   transform: scale(1.02);
   opacity: 0.9;
   transition: transform 300ms ease-in-out;
-  /* transform: linear-gradient(180deg, #A05ADC, #e270db); */
 }
 
 a {
