@@ -17,6 +17,8 @@ h1{
 
 header {
   min-width: 375px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   display: flex;
   padding-left: 15px;
 }
@@ -61,7 +63,7 @@ article img {
 
 .menu__category{
   /* border: 1px solid red; */
-  background-color: white;
+  /* background-color: white; */
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -80,7 +82,7 @@ strong{
 }
 
 .menu-item, .underline{
-  padding-left: 0.5rem;
+  /*  padding-left: 0.5rem; */
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -90,11 +92,17 @@ strong{
   /* align-items: center; */
 }
 
+.menu-item{
+  padding-top:10px;
+  padding-left: 10px;
+}
+
 .menu {
   background-color: #f6f6f6;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
-  transform: translateY(-10%);
+  padding-bottom: 50px;
+  /* transform: translateY(-10%); */
   /* position:absolute; */
 }
 
@@ -102,6 +110,7 @@ h3 {
   margin-top: 50px;
   margin-bottom: 1rem;
   position: relative;
+  margin-left: 2rem;
 }
 
 h3::after{
@@ -184,9 +193,9 @@ h3::after{
   /* display: inline-block; */
   /* position: absolute; */
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   margin-left: auto;
-  /* margin-top: 20px; */
+  margin-top: 15px;
   font-weight: 900;
   padding-right: 5px;
   /* margin; */
@@ -312,7 +321,7 @@ a {
 footer{
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   background-color: #353535;
   color: white;
   padding-left: 20px;
@@ -328,7 +337,7 @@ ul li{
 
 @media (min-width: 767px) {
   .menu-grid{
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
 }

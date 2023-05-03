@@ -89,9 +89,10 @@ a{
 }
 
 .bgc{
-  height: 200px;
+  /* height: 200px; */
   background-color: #F6F6F6;
   padding-top: 50px;
+  padding-bottom: 50px;;
 }
 
 .reserve{
@@ -183,17 +184,16 @@ restaurant::before{
 
 .resto{
   margin-left: 0px;
-  padding-left: 10px;
+  padding-left: 4%;
   padding-top: 50px;
 }
 
 .card{
   border-radius: 15px;
-  /* max-width: 47%; */
   max-width: 94%;
   max-height: 340px;
   /* margin: 10px 25px; */
-  margin: auto;
+  margin: 15px auto;
   position: relative;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   background-color: white;
@@ -243,7 +243,7 @@ restaurant::before{
   position:absolute;
   /* display: flex; */
   /* justify-content: flex-end; */
-  right: 4.8rem;  
+  right: 2rem;  
   /* left: auto; */
   top: 0rem;
   font-size: 2rem;
@@ -297,7 +297,7 @@ ul li{
   }
 
   .card{
-    width: 47%;
+    width: 45%;
   }
 }
 
@@ -319,7 +319,7 @@ ul li{
 
   .heart{
     position:absolute;
-    right: -3rem;  
+    right: -6rem;  
   }
 
   .card{
