@@ -325,7 +325,7 @@ ul li{
   .one-two-three{
     display: flex;
     flex-direction: row;
-    margin-left: 13%;
+    margin-left: 22%;
     gap: 5%;
   }
 
