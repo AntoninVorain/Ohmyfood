@@ -217,13 +217,21 @@ restaurant::before{
 
 .subtitle{
   position:relative;
-  width: 300px;
+  /* width: 300px; */
   left: 15px;
 }
 .subtitle a{
   color: black;
   font-weight: 800;
   margin-top: -16px;
+}
+
+.subtitle i{
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  top:50%;
+  transform: translateY(-50%);
 }
 
 .faubourg{
@@ -233,7 +241,7 @@ restaurant::before{
 }
 
 .fa-heart{
-  position: absolute;
+  /* position: absolute; */
 }
 
 .heart{
@@ -341,7 +349,7 @@ ul li{
   .heart{
     position:absolute;
     /* right: -5.5rem; */
-    right: -10.5rem;
+    /* right: -10.5rem; */
   }
 
   .card{
