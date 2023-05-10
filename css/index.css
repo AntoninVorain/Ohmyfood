@@ -229,7 +229,7 @@ restaurant::before{
 .subtitle i{
   font-size: 2rem;
   position: absolute;
-  right: 1rem;
+  right: 7%;
   top:50%;
   transform: translateY(-50%);
 }
@@ -330,19 +330,23 @@ ul li{
 }
 
 @media (min-width: 1200px) {
+  .fonction{
+    padding-left: 11%;
+  }
+
   .one-two-three{
     display: flex;
     flex-direction: row;
-    margin-left: 22%;
+    /* margin-left: 22%; */
     gap: 5%;
   }
 
-  .ftn{
+  /* .ftn{
     padding-left: 200px;
-  }
+  } */
   
   .resto{
-    padding-left: 200px;
+    padding-left: 12%;
     padding-bottom: 20px;
   }
 
