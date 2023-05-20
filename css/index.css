@@ -219,6 +219,8 @@ restaurant::before{
 .subtitle{
   position:relative;
   /* width: 300px; */
+  height: 60px;
+  padding-top: 1rem;
   left: 15px;
 }
 .subtitle a{
@@ -227,18 +229,18 @@ restaurant::before{
   margin-top: -16px;
 }
 
-.subtitle i{
+/* .subtitle i{
   font-size: 2rem;
   position: absolute;
   right: 7%;
   top:50%;
   transform: translateY(-50%);
-}
+} */
 
 .faubourg{
   font-size: 16px;
   margin-top: -0px;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
 }
 
 .fa-heart{
@@ -263,6 +265,83 @@ restaurant::before{
 
 .full-heart:hover{
   opacity: 1;
+}
+
+.heart-container {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  /* transform: translateX(-50%); */
+  right: 10%;
+  top:25%;
+  transform: translateY(-10%);
+}
+
+.heart-clip {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  -webkit-clip-path: url(#svgPath);
+          clip-path: url(#svgPath);
+}
+.heart-clip:hover {
+  -webkit-animation: pulse 0.6s 0.3s;
+          animation: pulse 0.6s 0.3s;
+}
+.heart-clip:hover::before {
+  transform: scale(1);
+  opacity: 1;
+}
+.heart-clip::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #9356DC;
+  opacity: 0;
+  transform: scale(0);
+  transition: transform 0.2s linear, opacity 0.2s linear;
+  transform-origin: center 60%;
+}
+.heart-clip.active {
+  -webkit-animation: pulse 0.6s 0.3s forwards;
+          animation: pulse 0.6s 0.3s forwards;
+}
+
+.heart-stroke {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: linear-gradient(180deg, #A05ADC, #e270db);;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.2);
+  }
+  60% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.2);
+  }
+  60% {
+    transform: scale(1);
+  }
 }
 
 footer{
